@@ -28,6 +28,14 @@ figcaption {
   line-height: 1.3;
 }
 
+.header-logo-checkout-overlay {
+    background-color: #000000;
+    background-image: url("../images/header-image.jpg");
+    background-image: url("../images/header-image.jpg"), linear-gradient(#ffffff, #000000);
+    background-size: cover;
+    z-index: -20;
+}
+
 @media screen and (min-width: 500px) {
     .header-logo-checkout-overlay {
         display: flex;
