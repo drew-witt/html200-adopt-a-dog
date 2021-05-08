@@ -71,7 +71,7 @@ const dogCards = [
     text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"
   },
     {image_url:"images/stella-card.jpg",
-    image_alt:"Chihuahua", 
+    image_alt:"Chihuahua",
     name:"Stella",
     cost:"123.45",
     text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"}
