@@ -71,7 +71,7 @@ const dogCards = [
     text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"
   },
     {image_url:"images/stella-card.jpg",
-    image_alt:"Chihuahua", 
+    image_alt:"Chihuahua",
     name:"Stella",
     cost:"123.45",
     text:"Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae"}
@@ -146,3 +146,34 @@ function createBlogPosts() {
         document.getElementById("blog-main").appendChild(article);
     })
 }
+
+$('#submit-button').click(function() {
+    jqueryFormValidation();
+});
+
+function jqueryFormValidation() {
+    $("input, select").each((function( index ) {
+        console.log( index + ": " + $(this).val() );
+        if($(this).is(":checked")){
+            console.log(index + ": " + $(this).val() + " is checked");
+        }
+      }));
+}
+
+$(window).bind("load", function() {
+    $('.dog-card-adopt-link').click(function() {
+        alert( "Dog Adopted!" );
+        this.text = 'Added to Adoption Cart!';
+        let cost = parseFloat($(this).parent().find('.price-value').text());
+        console.log(cost);
+        $('.cart-value').text(parseFloat($('.cart-value').text()) + cost);
+        console.log($('.cart-value'));
+    });
+    $('.dog-card').mouseover(function() {
+        $(this).addClass('dog-card-shadow');
+    });
+
+    $('.dog-card').mouseleave(function() {
+        $(this).removeClass('dog-card-shadow');
+    });
+});

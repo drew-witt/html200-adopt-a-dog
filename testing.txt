@@ -1,0 +1,16 @@
+Testing Steps to Ensure a Quality Site
+HTML5 Validator
+  After building out the HTML document, I used https://validator.w3.org/ to test the validity of each page's HTML. Often times, the errors that occurred were ones that were out of my control (i.e. bad value and illegal character in query when using Google Fonts) and other times errors occurred from where I placed <p> tags as place holders in some elements. Incidentally, using the validator allows you to see what can and can't be children of elements when using place holders. For example, I found that <div> can't be a child of <i>, but <span> can. As the site is built out fully, these place holders will be replaced by actual content for the site. I used https://jigsaw.w3.org/css-validator/ to confirm that I had written the CSS correctly. I continue to periodically validate the code even after I am done, since you can go back and make changes in the HTML as you write CSS and JavaScript.
+
+– Desktop Browsers
+  Performed in Chrome, Safari, and Firefox. I opened and resized Adopt-A-Dog in these browsers. Firefox handled everything as expected. Safari and Chrome had trouble condensing the images and text they way that was intended when simply dragging and resizing windows.
+
+– Browser Dev-Tools
+  Throughout the duration of this module, I have used Mozilla DevTools.
+
+Platforms
+-iOS: With Chrome browser on a mobile view, the website mostly functions as expected.  However, the widths on the checkout input and select boxes and their layout is not optimized for mobile.
+
+-Windows: Using Chrome browser, no differences were noticed in website performance or rendering on a Windows with Chrome browser.
+
+-iPad: One area for enhancement is the rendering of the blog page on portrait orientation, the text area is too narrow.  In landscape the page renders in a more correct way.  Second, the multi-select drop downs on the form are not rendering with border radii like the text inputs.  Otherwise the pages render correctly.
